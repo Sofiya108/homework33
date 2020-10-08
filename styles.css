@@ -1,14 +1,19 @@
 body {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
 	padding: 20px; 
 	background-color: #2c2c2c;
 }
 table{
-	
+	line-height: 3em;
 	border: 1px solid grey;
-	width:70%;
+	width:50%;
+	margin: 0px auto; 
 	border-radius: 5px;
+	border-spacing: 0;
 }
 th{
+	padding: 10px;
 	width: 200px;
 	border-bottom: 1px solid grey;
 	display: table-cell;
@@ -17,21 +22,22 @@ th{
     text-align: -internal-center;
 }
 th.thlast{
+	padding: 10px;
 	width: 145px;
 }
 td.first{
+	padding: 10px;
 	border-bottom: 1px solid grey;
 }
 
 thead {
-	
 	font-size: 14px;
 	text-align: left;
 	color: white;
 	
 }
 tbody {
-	
+	padding: 10px;
 	color: gray;
 }
 img {
@@ -39,7 +45,7 @@ img {
 	height: 4,5px;
 }
 .point {
-	width: 29px;
+	width: 20px;
 	height: 20px;
 	float: right;
 }
@@ -57,4 +63,74 @@ input#s{
 	width:120px;
 	height: 16px;
 	float: right;
+}
+
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-1 input#search{
+  width: 180px;
+  height: 3em;
+  background: #414346;
+  border: none;
+  font-size: 10pt;
+  float: right;
+  left: 0;
+  padding-left: 45px;
+  border-radius: 5px;
+}
+
+.main-element {
+  position: relative;
+}
+
+.main-element::before {
+  position: absolute;
+  content: "▼";
+  color:  #fefffe;
+  font-size: 10px;
+  top: 20%;
+  left: 55px;
+}
+.main-element_two {
+  position: relative;
+}
+
+.main-element_two::before {
+  position: absolute;
+  content: "▼";
+  color:  #fefffe;
+  font-size: 10px;
+  top: 20%;
+  left: 70px;
+}
+
+#main-element_three {
+  position: relative;
+}
+
+#main-element_three::after {
+  position: absolute;
+  content: "•••";
+  color: ;
+  font-size: 18px;
+  top: 15px;
+  right: 30px;
+}
+
+.container-1 {
+  position: relative;
+}
+
+.container-1::before {
+  position: absolute;
+  content: "⌕";
+  color: #757575;
+  font-size: 35px;
+  top: -4px;
+  right: 50%;
 }
